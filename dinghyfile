@@ -14,7 +14,7 @@
     },
     {
       "application": "{{ var "app" }}",
-      "name": "second pipeline",
+      "name": "{{ var "x-comment" }}",
       "stages": [] 
     }
   ]
