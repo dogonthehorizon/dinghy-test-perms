@@ -1,0 +1,21 @@
+{
+  "application": "{{ var "app" }}",
+  "globals": {
+    "app": "foo-live-demo-perms",
+    "x-comment": "should not update"
+  },
+  "pipelines": [
+    {
+      "application": "{{ var "app" }}",
+      "name": "foo",
+      "stages": [
+        {{ module "wait.stage.module" }}
+      ]
+    },
+    {
+      "application": "{{ var "app" }}",
+      "name": "second pipeline",
+      "stages": [] 
+    }
+  ]
+}
